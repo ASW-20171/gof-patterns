@@ -15,9 +15,9 @@
     "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.babel.js", 
-    "test": "mocha --compilers js:babel-core/register **/*spec.js",
-    "start": "webpack-dev-server --open"
+    "build": "./node_modules/.bin/webpack --config webpack.config.babel.js", 
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register **/*spec.js",
+    "start": "./node_modules/.bin/webpack-dev-server --open"
   },
   "keywords": [],
   "author": "",
