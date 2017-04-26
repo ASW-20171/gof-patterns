@@ -22,18 +22,7 @@ var config = {
                 options: { presets: ['es2015'] }
             }]
         }]
-    },
-    devtool: "eval-source-map"
+    }
 };
-
-// Check if build is running in production mode, then change the sourcemap type
-if (process.env.NODE_ENV === "production") {
-  config.devtool = ""; // No sourcemap for production
-
-  // Add more configuration for production here like
-  // SASS & CSS loaders
-  // Offline plugin
-  // Etc,
-}
 
 module.exports = config;
